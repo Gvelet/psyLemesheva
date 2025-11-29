@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const spoilers = document.querySelectorAll('.supervision__spoiler');
 
   spoilers.forEach(spoiler => {
-    const header = spoiler.querySelector('.supervision__spoiler-top');
     const content = spoiler.querySelector('.supervision__spoiler-content');
 
-    header.addEventListener('click', (event) => {
-      event.preventDefault();
+    spoiler.addEventListener('click', (event) => {
+      // не ломаем переход по кнопке «ЗАПИСАТЬСЯ»
+      if (event.target.closest('a')) return;
 
       const isOpen = spoiler.classList.contains('supervision__spoiler--active');
 
@@ -22,4 +22,23 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+    //Бургер
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.menu-mobile');
+    const body = document.body;
+
+    burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    menu.classList.toggle('active');
+    body.classList.toggle('body-lock');
+    });
+
+    document.querySelectorAll('.menu-mobile .menu__link').forEach(link => {
+    link.addEventListener('click', () => {
+        burger.classList.remove('active');
+        menu.classList.remove('active');
+        body.classList.remove('body-lock');
+    });
+    });
 });
