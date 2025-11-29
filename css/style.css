@@ -711,12 +711,12 @@ body{
   }
 
   .about__info{
-    margin-right: 25px;
+    margin-right: 0px;
   }
 
   .about__inner{
     flex-direction: column;
-    gap: 35px;
+    gap: 15px;
     align-items: center; 
     max-width: 600px;
     text-align: center;
@@ -769,6 +769,10 @@ body{
     .text-default{
         margin-bottom: 20px;
         font-size: 14px;
+    }
+
+    .about__btn{
+        width: 100%;
     }
 
 }

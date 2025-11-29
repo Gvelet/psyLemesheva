@@ -41,4 +41,11 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.remove('body-lock');
     });
     });
+
+    window.addEventListener('load', function() {
+        if (window.location.hash) {
+            // Очищаем хэш из URL без изменения истории
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+        }
+    });
 });
