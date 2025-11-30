@@ -480,6 +480,7 @@ body{
     padding: 40px 40px;
 }
 
+
 .footer__menu-title{
     margin-bottom: 10px;
 }
@@ -831,8 +832,22 @@ body{
       gap: 15px;
   }
 
-  .services__inner__work{
+  .services__inner__work{ 
       width: 100%;
+  }
+
+  .footer__inner{
+    display: block;
+    padding: 40px 20px;
+  }
+
+  .footer__menu{
+    margin-bottom: 30px;
+  }
+
+  
+  .footer__img{
+    margin-bottom: 20px;
   }
 }
 
@@ -885,6 +900,11 @@ body{
         padding: 20px 20px;
         max-width: 100%;
         margin-bottom: 80px;
+    }
+
+    .footer__inner{
+      display: block;
+      padding: 20px 5px;
     }
 
 }
