@@ -315,10 +315,10 @@ body{
 .services__recording-btn{
     position: absolute;
     text-transform: uppercase;
-    right: 60px;
+    right: 50px;
     transform: translateY(-50%);
-    width: 283px;
-    height: 254px;
+    width: 250px;
+    height: 240px;
     border: 1px solid #DDAE93;
     border-radius: 50%;
     cursor: pointer;
@@ -675,6 +675,31 @@ body{
         font-size: 14px;
     }
 
+    .help__item-text{
+      font-size: 14px;
+    }
+
+    .services__recording-btn{
+      left: 30px;
+      bottom: 0px;
+      font-size: 16px;
+      transform: translateY(-50%);
+      width: 60%;
+      height: 80px;
+      border-radius: 0%;
+    } 
+
+    .services__recording{
+      width: 60%;
+      max-width: 600px;
+  }
+
+  .services__recording-content{
+      padding: 20px 30px;
+      max-width: 600px;
+      margin-bottom: 120px;
+  }
+
   
 }
 
@@ -731,6 +756,39 @@ body{
     display: block;
   }
 
+  .about__education-hashtag{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .about__education-info{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .help__items-row{
+    flex-wrap: wrap;
+  }
+
+  .services__recording-content{
+      margin-bottom: 95px;
+  }
+
+  .services__inner{
+    margin-bottom: 30px;
+  }
+
+  .services__inner__work-item{
+    margin-bottom: 0px;
+  }
+
+  .services__inner__work-text{
+    margin-bottom: 20px;
+  }
+
+  .services__recording{
+    width: 100%;
+  }
   
 }
 
@@ -750,7 +808,34 @@ body{
   .hashtag{
     font-size: 12px;
   }
+
+  .about__education-title{
+    font-size: 18px;
+  }
+
+  .about__education-text{
+    font-size: 14px;
+  }
+
+  .help__item {
+    height: 65px;
+    padding: 10px 12px;
+  }
+
+  .help__items {
+    gap: 15px;
+    margin: 0 20px;
+  }
+
+  .help__items-row {
+      gap: 15px;
+  }
+
+  .services__inner__work{
+      width: 100%;
+  }
 }
+
 
 @media (max-width: 500px) {
     .title{
@@ -773,6 +858,33 @@ body{
 
     .about__btn{
         width: 100%;
+    }
+
+    .about__education-title{
+      font-size: 16px;
+    }
+
+    .about__education-text{
+      font-size: 14px;
+    }
+
+    .help__item-text{
+      font-size: 12px;
+    }
+
+    .services__recording-btn{
+      left: 15px;
+      font-size: 14px;
+      width: 90%;
+      height: 50px;
+      border-radius: 0%;
+      margin-bottom: 10px;
+    } 
+
+    .services__recording-content{
+        padding: 20px 20px;
+        max-width: 100%;
+        margin-bottom: 80px;
     }
 
 }

@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const content = spoiler.querySelector('.supervision__spoiler-content');
 
     spoiler.addEventListener('click', (event) => {
-      // не ломаем переход по кнопке «ЗАПИСАТЬСЯ»
       if (event.target.closest('a')) return;
 
       const isOpen = spoiler.classList.contains('supervision__spoiler--active');
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-    //Бургер
     const burger = document.querySelector('.burger');
     const menu = document.querySelector('.menu-mobile');
     const body = document.body;
@@ -44,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('load', function() {
         if (window.location.hash) {
-            // Очищаем хэш из URL без изменения истории
             history.replaceState(null, null, window.location.pathname + window.location.search);
         }
     });
