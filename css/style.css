@@ -627,7 +627,12 @@ body{
 }
 
 .menu-mobile .header__social-link {
-  margin-right: 15px;
+  margin-right: 10px;
+}
+
+.menu-mobile  .header__social-link svg{
+  width: 35px;
+  height: 35px;
 }
 
 
@@ -848,6 +853,27 @@ body{
   
   .footer__img{
     margin-bottom: 20px;
+  }
+
+  .footer__menu-list{
+    gap: 20px;
+  }
+
+  .footer__menu-link{
+    font-size: 18px;
+  }
+
+  .footer__menu-title{
+    margin-bottom: 15px;
+  }
+
+  .footer__social-link svg{
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer__contact-social{
+    gap: 20px;
   }
 }
 
