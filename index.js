@@ -1,22 +1,34 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const spoilers = document.querySelectorAll('.supervision__spoiler');
+  // АККОРДЕОН: supervision + faq
+  const accordions = document.querySelectorAll('.accordion__item');
 
-  spoilers.forEach(spoiler => {
-    const content = spoiler.querySelector('.supervision__spoiler-content');
+  accordions.forEach(item => {
+    const content = item.querySelector('.accordion__content');
 
-    spoiler.addEventListener('click', (event) => {
-      if (event.target.closest('a')) return;
+    item.addEventListener('click', (event) => {
+      if (event.target.closest('a')) return; // не ломаем ссылки
 
-      const isOpen = spoiler.classList.contains('supervision__spoiler--active');
+      const parentAccordion = item.closest('.accordion');
+      const isSingle = parentAccordion.classList.contains('accordion--single'); // только supervision
+      const isOpen = item.classList.contains('accordion__item--active');
 
-      spoilers.forEach(item => {
-        item.classList.remove('supervision__spoiler--active');
-        const c = item.querySelector('.supervision__spoiler-content');
-        c.style.maxHeight = null;
-      });
+      // если это одиночный режим (supervision) — закрываем остальные в том же контейнере
+      if (isSingle) {
+        parentAccordion.querySelectorAll('.accordion__item').forEach(other => {
+          if (other !== item) {
+            other.classList.remove('accordion__item--active');
+            const otherContent = other.querySelector('.accordion__content');
+            if (otherContent) otherContent.style.maxHeight = null;
+          }
+        });
+      }
 
-      if (!isOpen) {
-        spoiler.classList.add('supervision__spoiler--active');
+      // переключаем текущий
+      if (isOpen) {
+        item.classList.remove('accordion__item--active');
+        content.style.maxHeight = null;
+      } else {
+        item.classList.add('accordion__item--active');
         content.style.maxHeight = content.scrollHeight + 'px';
       }
     });
