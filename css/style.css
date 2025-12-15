@@ -798,11 +798,16 @@ body{
   font-weight: 400;
 }
 .blog__cards { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-  gap: 30px; 
-  margin-bottom: 60px; 
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 360px));
+  gap: 30px;
+  margin-bottom: 60px;
+
+  justify-content: start;  
+}
+
+.blog__cards--center{
+  justify-content: center; 
 }
 .blog__card { 
   max-width: 380px;
@@ -1023,10 +1028,34 @@ body{
   color: #D08B64; 
   text-decoration: underline; 
 }
-.post-content .default-btn { 
-  display: inline-block; 
-  margin: 25px 0;
+
+.post-content a.default-btn { 
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
+
+.post-content blockquote {
+  display: inline-block;   
+  max-width: 100%;        
+  margin: 15px 0;
+  padding: 20px 24px;
+  border-left: 4px solid #D08B64;
+  background: #FFF3EB;
+  border-radius: 12px;
+  font-style: italic;
+  color: #555;
+}
+
+.post-content blockquote p {
+  margin-bottom: 0;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid #E3D4C7;
+  margin: 40px 0;
+}
+
 
 /* Адаптив */
 @media (max-width: 768px) {
@@ -1061,6 +1090,12 @@ body{
   .post-content h1 {
     font-size: 28px;
   }
+
+  .post-content .default-btn { 
+    font-size: 16px;
+  };
+
+
 }
 
 
@@ -1144,6 +1179,7 @@ body{
     padding: 8px 20px;  
     font-weight: 500; 
   }
+  
 
   
 }
@@ -1240,11 +1276,16 @@ body{
   }
 
   .post-content img { 
-    max-width: 100%;      /* не шире экрана/контейнера */
-    width: 100%;          /* чтобы красиво ужималась */
+    max-width: 100%;     
+    width: 100%;          
     height: auto;
   }
   
+  .blog-header { 
+    padding: 20px 0; 
+    margin-bottom: 30px;
+  };
+
 }
 
 @media (max-width: 768px) {
@@ -1344,6 +1385,34 @@ body{
 
   .blog__content{
     display: block;
+  };
+
+  .blog-header { 
+    background: red; 
+    padding: 20px 0; 
+    margin-bottom: 30px;
+  }
+
+  .post-content h1 { font-size: 28px; font-weight: 700; }
+  .post-content h2 { font-size: 24px; font-weight: 600; }
+  .post-content h3 { font-size: 20px; font-weight: 600; }
+  .post-content p { 
+    font-size: 16px; 
+    line-height: 1.7; 
+    margin-bottom: 25px; 
+    color: #333;
+  };
+
+  .post-content ul, .post-content ol { 
+    font-size: 16px; 
+  }
+
+  .post-content li { 
+    font-size: 16px; 
+  };
+
+  .post-content a.default-btn { 
+    font-size: 14px;
   }
 
 }
@@ -1409,6 +1478,6 @@ body{
     .footer__inner{
       display: block;
       padding: 20px 5px;
-    }
+    };
 
 }
