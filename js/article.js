@@ -7,24 +7,34 @@ document.addEventListener('DOMContentLoaded', () => {
     crumbSpan.textContent = h1.textContent.trim();
   }
 
-  // 2) Канонический URL по текущему адресу
-  const url = new URL(window.location.href);
-  const canonicalHref = `https://psylemesheva.ru${url.pathname.replace(/index\.html$/i, '')}`;
+// 2) Канонический URL по текущему адресу
+const url = new URL(window.location.href);
 
-  let link = document.querySelector('link[rel="canonical"]');
-  if (!link) {
-    link = document.createElement('link');
-    link.rel = 'canonical';
-    document.head.appendChild(link);
-  }
-  const currentCanonical = link.getAttribute('href');
-  if (!currentCanonical) {
-    link.setAttribute('href', canonicalHref);
-  }
+// убираем index.html и .html в конце
+let cleanPath = url.pathname
+  .replace(/index\.html$/i, '')  
+  .replace(/\.html$/i, '');       
 
-  if (!h1) return;
+// гарантируем ведущий слэш
+if (!cleanPath.startsWith('/')) cleanPath = '/' + cleanPath;
 
-  const articleTitle = h1.textContent.trim();
+const canonicalHref = `https://psylemesheva.ru${cleanPath}`;
+
+let link = document.querySelector('link[rel="canonical"]');
+if (!link) {
+  link = document.createElement('link');
+  link.rel = 'canonical';
+  document.head.appendChild(link);
+}
+
+const currentCanonical = link.getAttribute('href');
+if (!currentCanonical) {
+  link.setAttribute('href', canonicalHref);
+}
+
+if (!h1) return;
+
+const articleTitle = h1.textContent.trim();
 
   // 3) TITLE: если не задан – подставляем h1
   if (!document.title || document.title.trim() === '') {
