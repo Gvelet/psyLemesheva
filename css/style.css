@@ -969,6 +969,9 @@ body{
 .post-content { 
   padding: 60px 20px;
 }
+.post-content-post{
+  max-width: 800px;
+}
 .post-content img { 
   max-width: 800px;
 
