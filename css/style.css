@@ -413,7 +413,7 @@ body{
 }
 
 .supervision {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 .supervision__inner {
@@ -618,7 +618,7 @@ body{
 .faq__subtitle {
   max-width: 720px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 30px;
 }
 
@@ -1058,6 +1058,205 @@ body{
   border-top: 1px solid #E3D4C7;
   margin: 40px 0;
 }
+
+/* Супервизия */
+/* Общий отступ для секций */
+.supervision-section {
+  padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .supervision-section {
+    padding: 20px 0;
+  }
+}
+
+/* HERO */
+
+.supervision-hero {
+  padding: 80px 0 60px;
+  background: #fff9f3;
+}
+
+.supervision-hero__inner {
+  max-width: 760px;
+}
+
+.supervision-hero__title {
+  margin-bottom: 16px;
+}
+
+.supervision-hero__subtitle {
+  max-width: 620px;
+  margin-bottom: 24px;
+}
+
+.supervision-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  align-items: center;
+}
+
+.supervision-hero__link {
+  font-size: 16px;
+  color: #D08B64;
+  text-decoration: underline;
+}
+
+/* Заголовки секций */
+
+.supervision-section__title {
+  margin-bottom: 20px;
+}
+
+.supervision-section__intro {
+  max-width: 680px;
+  margin-bottom: 24px;
+}
+
+/* Списки */
+
+.supervision-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.supervision-list__item {
+  position: relative;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.supervision-list__item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #D08B64;
+}
+
+.supervision-list--columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 40px;
+}
+
+.supervision .accordion{
+  max-width: none;
+}
+.faq__inner--supervision{
+  max-width: none; 
+  margin: 0;  
+}
+
+@media (max-width: 768px) {
+  .supervision-list--columns {
+    grid-template-columns: 1fr;
+  }
+
+  .supervision-hero{
+    padding-bottom: 20px;
+  }
+}
+
+/* Форматы */
+
+.supervision-formats__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .supervision-formats__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.supervision-card {
+  border-radius: 16px;
+  padding: 24px 24px 20px;
+  background: #fff6ed;
+}
+
+.supervision-card__title {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.supervision-card__text {
+  margin-bottom: 14px;
+}
+
+.supervision-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+.supervision-card__list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.supervision-card__list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #D08B64;
+}
+
+.supervision-card__info {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #3b2c25;
+}
+
+/* Как проходят встречи */
+
+.supervision-how__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .supervision-how__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.supervision-how__subtitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/* О ведущей */
+
+.supervision-about__inner {
+  max-width: 760px;
+}
+
+.supervision-about__text p + p {
+  margin-top: 12px;
+}
+
+.supervision-about__link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #D08B64;
+  text-decoration: underline;
+}
+
 
 
 /* Адаптив */
