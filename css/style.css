@@ -413,7 +413,7 @@ body{
 }
 
 .supervision {
-    margin-bottom: 0px;
+    margin-bottom: 100px;
 }
 
 .supervision__inner {
@@ -609,6 +609,11 @@ body{
 
 .accordion__item--active .accordion__icon {
   transform: rotate(45deg);
+}
+
+.accordion__btn{
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /* FAQ спец-стили */
@@ -1218,6 +1223,8 @@ body{
   font-weight: 600;
   margin-bottom: 15px;
   color: #3b2c25;
+  font-size: 18px;
+  margin-top: 25px;
 }
 
 /* Как проходят встречи */
