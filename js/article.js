@@ -43,7 +43,7 @@ const articleTitle = h1.textContent.trim();
 
   // 4) META DESCRIPTION: шаблон, только если пусто
   const defaultDesc =
-    `Статья на тему «${articleTitle}» от психолога Регины Лемешевой о причинах, проявлениях и пути к изменениям.`;
+    `Статья на тему «${articleTitle}» от психолога Регины Лемешевой: основные моменты, советы психолога и разбор ситуации.`;
 
   let metaDesc = document.querySelector('meta[name="description"]');
   if (!metaDesc) {

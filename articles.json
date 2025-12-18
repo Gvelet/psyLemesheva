@@ -2,10 +2,46 @@
   {
     "slug": "rpp",
     "title": "Когда еда становится тревогой: как распознать и прожить РПП",
-    "showOnHome": true,
+    "showOnHome": false,
     "description": "Кратко о том, что такое расстройство пищевого поведения, как оно проявляется и с чего начать путь к ремиссии.",
     "image": "../images/blog/prichiny-formirovaniya-rpp.png",
     "category": "Здоровье",
-    "date": "2025-12-15"
+    "date": "2025-12-16"
+  },
+  {
+    "slug": "byt-soboy",
+    "title": "Когда Я не являюсь Собой",
+    "showOnHome": false,
+    "description": "Что ведет к разрыву контакта с собой, как это проявляется и что с этим делать.",
+    "image": "../images/blog/byt-soboy.png",
+    "category": "Самооценка",
+    "date": "2025-12-17"
+  }, 
+  {
+    "slug": "kak-otpravit-blizkogo-k-psihologu",
+    "title": "Нужно ли отправлять близкого к психологу",
+    "showOnHome": false,
+    "description": "Как отправить близкого человека к психологу и нужно ли это делать.",
+    "image": "../images/blog/kak-psy.png",
+    "category": "Отношения",
+    "date": "2025-12-18"
+  }, 
+  {
+    "slug": "zhiznennyy-put-etapy-i-krizisy",
+    "title": "Основные этапы жизненного пути",
+    "showOnHome": false,
+    "description": "Путь длиною в жизнь: основные этапы, задачи и сложности жизненных кризисов.",
+    "image": "../images/blog/krizisy.png",
+    "category": "Кризисы",
+    "date": "2025-12-19"
+  }, 
+  {
+    "slug": "vnutrenniy-kritik",
+    "title": "Внутренний критик",
+    "showOnHome": false,
+    "description": "Как мы себя истязаем необоснованной критикой.",
+    "image": "../images/blog/vnutrenniy-kritik.png",
+    "category": "Самооценка",
+    "date": "2025-12-19"
   }
 ]
