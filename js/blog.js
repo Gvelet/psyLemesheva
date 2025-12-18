@@ -40,7 +40,7 @@ class Blog {
         image: a.image || '/images/bg.webp',
         category: a.category || '',
         date: a.date || '',
-        url: `/blog/${a.slug}.html`,
+        url: `/blog/${a.slug}`,
         showOnHome: Boolean(a.showOnHome)
       }));
 
