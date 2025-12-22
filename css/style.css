@@ -983,7 +983,7 @@ body{
   border-radius: 12px; 
   margin: 15px 0;
 }
-.post-content h1, .post-content h2, .post-content h3 { 
+.post-content h1, .post-content h2, .post-content h3, .post-content h4 { 
   color: #000; 
   margin-top: 20px; 
   margin-bottom: 20px;
@@ -991,6 +991,7 @@ body{
 .post-content h1 { font-size: 36px; font-weight: 700; }
 .post-content h2 { font-size: 28px; font-weight: 600; }
 .post-content h3 { font-size: 24px; font-weight: 600; }
+.post-content h4 { font-size: 21px; font-weight: 500; }
 .post-content p { 
   font-size: 18px; 
   line-height: 1.7; 

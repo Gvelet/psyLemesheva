@@ -43,5 +43,23 @@
     "image": "../images/blog/vnutrenniy-kritik.png",
     "category": "Самооценка",
     "date": "2025-12-19"
+  },
+  {
+    "slug": "dogovorennosti",
+    "title": "Зачем нужны границы и договоренности",
+    "showOnHome": false,
+    "description": "Для чего нам нужны границы, договоренности и сеттинг, и как это влияет на психику.",
+    "image": "../images/blog/dogovorennosti.png",
+    "category": "Психология",
+    "date": "2025-12-20"
+  }, 
+  {
+    "slug": "psiholog-komu-nuzhen",
+    "title": "Нужно ли мне к психологу",
+    "showOnHome": false,
+    "description": "Обязательно ли каждому человека посещать психолога и как понять, когда обращаться за помощью.",
+    "image": "../images/blog/psiholog-komu-nuzhen.png",
+    "category": "Психология",
+    "date": "2025-12-22"
   }
 ]
