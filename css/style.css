@@ -511,6 +511,12 @@ body{
   max-width: 720px;
 }
 
+.supervision-cta{
+  margin-bottom: 70px;
+}
+.supervision-cta-text{
+  margin-bottom: 20px;
+}
 .quote{
   margin-bottom: 100px;
   background-color: #FFF9F3;
@@ -891,7 +897,7 @@ body{
   font-weight: 500;
   font-size: 12px;
 
-  display: inline-flex;      /* ширина по содержимому */
+  display: inline-flex;      
   align-items: center;
   justify-content: center;
   width: auto;
@@ -937,8 +943,8 @@ body{
   display: inline-flex;
     align-items: center;
   justify-content: center;
-  width: auto;            /* ширина = содержимое */
-  min-width: 0;           /* не фиксировать минимум */
+  width: auto;            
+  min-width: 0;        
 }
 .blog-filter-btn.active, .blog-filter-btn:hover { 
   background: #D08B64; 
