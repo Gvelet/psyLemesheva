@@ -70,5 +70,14 @@
     "image": "../images/blog/result-terapy.png",
     "category": "Психология",
     "date": "2026-01-08"
+  },
+   {
+    "slug": "supervision-zachem",
+    "title": "Супервизия: что это и для чего нужна",
+    "showOnHome": false,
+    "description": "Для чего психологу нужна супервизия? Кто такой супервизор? Какие цели и результаты супервизии?",
+    "image": "../images/blog/supervision.jpg",
+    "category": "Психология",
+    "date": "2026-01-18"
   }
 ]
