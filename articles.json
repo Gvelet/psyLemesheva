@@ -57,7 +57,7 @@
     "slug": "psiholog-komu-nuzhen",
     "title": "Нужно ли мне к психологу",
     "showOnHome": false,
-    "description": "Обязательно ли каждому человека посещать психолога и как понять, когда обращаться за помощью.",
+    "description": "Обязательно ли каждому человеку посещать психолога и как понять, когда обращаться за помощью.",
     "image": "../images/blog/psiholog-komu-nuzhen.png",
     "category": "Психология",
     "date": "2025-12-22"
@@ -79,5 +79,23 @@
     "image": "../images/blog/supervision.jpg",
     "category": "Психология",
     "date": "2026-01-18"
+  },
+  {
+    "slug": "kak-vybrat-psihologa",
+    "title": "Как выбрать «своего» психолога?",
+    "showOnHome": false,
+    "description": "На что обратить внимание при выборе психолога: образование, супервизия и личностные особенности.",
+    "image": "../images/blog/kak-vybrat-psihologa.jpg",
+    "category": "Психология",
+    "date": "2026-02-08"
+  },
+  {
+    "slug": "odna-vstrecha-psiholog",
+    "title": "Можно ли решить проблему за одну сессию с психологом?",
+    "showOnHome": false,
+    "description": "Достаточно ли одной консультации с психологом для решения жизненных трудностей?",
+    "image": "../images/blog/odna-vstrecha-psiholog.jpg",
+    "category": "Психология",
+    "date": "2026-02-19"
   }
 ]
